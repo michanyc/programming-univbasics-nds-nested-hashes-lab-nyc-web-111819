@@ -31,10 +31,13 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
-  aoh[row][key]
+  aoh_lookup = aoh[row][key]
+  aoh_lookup
 end
 
 def aoh_update(aoh, row, key, new_value)
+  aoh_update = aoh[row][key][new_value]
+  aoh_update
   # Update the AoH data at row and key to have the value of new_value
   # Return the updated AoH
 end
